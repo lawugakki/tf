@@ -2,19 +2,28 @@
 1111
 # 我生气
 
+
+
 import tensorflow as tf
 import  os
 
-#隐藏提示警告
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
-#定义函数
-#学习率和步数的设置
+隐藏提示警告
+
+
+
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+定义函数
+学习率和步数的设置
+
 def myregression():
     '''
+    
     自实现一个线性回归预测
     :return: None
     '''
+    
     #建立作用域
     with tf.variable_scope("data"):
         #1.准备数据.x 特征值 [100,10] y 目标值[100]
